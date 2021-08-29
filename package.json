@@ -1,0 +1,44 @@
+{
+  "name": "vue3-boilerplate",
+  "version": "0.1.0",
+  "description": "Vue3 boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -Rf dist",
+    "dev": "vite --config src/vite.config.js",
+    "build": "vite build --config src/vite.config.js",
+    "serve": "vite preview --config src/vite.config.js",
+    "eslint": "eslint --config ./.eslintrc.js --ext .vue,.js --ignore-path .gitignore",
+    "lint": "npm run eslint . || true",
+    "fix": "npm run eslint . --fix || true"
+  },
+  "dependencies": {
+    "vue": "^3.2.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@vitejs/plugin-vue": "^1.6.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "eslint-plugin-vue": "^7.17.0",
+    "vite": "^2.5.1",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tilleps/vue3-boilerplate.git"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "vite",
+    "boilerplate"
+  ],
+  "author": "Eugene Song <tilleps@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tilleps/vue3-boilerplate/issues"
+  },
+  "homepage": "https://github.com/tilleps/vue3-boilerplate#readme"
+}
